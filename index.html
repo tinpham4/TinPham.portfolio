@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Pham</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Navigation section-->
+    <header>
+        <a href="#" class="logo">Tin Pham</a>
+        <ul class="nav-content">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <!--Hero section-->
+    <section id="about" class="hero">
+        <div class="hero-text">
+            <h2>Tin Pham. <i class="ph ph-hand-peace"></i></h2>
+            <h3>Developer</h3>
+            <p>A beginner developer with a big passion for learning and creating. I'm currently diving into web development and AI, building simple but meaningful projects along the way. I love solving real-world problems through code and growing a little better every day.</p>
+            <br/>
+            <div class="hero-button">
+                <a href="#" class="hero-button">Contact Info</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="https://i.postimg.cc/L6WdGfbM/396718263-1799879747-imresizer.jpg" 
+            style="width: 390px"/>
+        </div>
+    </section>
+
+
+    <!--Social media icon-->
+    <div class="socials-icons">
+        <a href="https://www.instagram.com/tin.pham4"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.linkedin.com/in/tin-pham-51068023a/"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://github.com/tinpham4"><i class="ph ph-github-logo"></i></a>
+    </div>
+
+    <h2 id="projects" class=" title">Projects</h2>
+
+    <!--Project Section-->
+    <div class="container">
+        <div class="proj-1">
+            <h3 class="project-title">
+                <a href="https://github.com/tinpham4/Lil-casino-beginner" target="_blank" class="project-link">Small Casino</a>
+            </h3>
+            <p class="company">Codex</p>
+            <p class="project-description">My first Python project, built while exploring Codex. I created a mini casino featuring simple games like slots and number guessing to practice basic logic, user input, and randomization. It was a fun way to start learning Python through hands-on coding.</p>
+        </div>
+        </a>
+        <div class="proj-2">
+            <h3 class="project-title">
+                <a href="https://github.com/tinpham4/Restaurant-menu" target="_blank" class="project-link">Restaurant Menu Website</a>
+            </h3>
+            <p class="company">Codex</p>
+            <p class="project-description">A simple Vietnamese food ordering page built with HTML and a bit of CSS. This project helped me practice structuring real-world content and styling a clean, easy-to-read menu layout.</p>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact" class="message">
+        <h3>Send Me a Message</h3>
+        <form action="https://formspree.io/f/xjkoagqw" method="POST">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Your Name" required />
+      
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="youremail@example.com" required />
+      
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject about cooperation..." required />
+      
+            <label>Your Message</label>
+            <textarea name="message" placeholder="Your message here..." required></textarea>
+      
+            <button type="submit">Send Message</button>
+        </form>
+    </div>      
+</body>
+</html>

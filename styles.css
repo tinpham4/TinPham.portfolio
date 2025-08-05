@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f0eee2;
+    color: #1e1e24;
+}
+
+header {
+    position: fixed;
+    background-color: #f5f3e7;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1.5rem 8rem;
+}
+
+.logo {
+    margin-right: auto;
+    color: #1e1e24;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-content {
+    display: flex;
+    font-size: 17px;
+}
+
+.nav-content a {
+    display: inline-block;
+    margin: 0 2.1rem;
+    color: #1e1e24;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.nav-content a:hover {
+    transform: translateY(-5px);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 18rem;
+    gap: 1reml
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 9px 25px #1e1e24;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h3 {
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-text h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+
+.hero-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #f0eee2;
+    border: 1px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.6s;
+}
+
+.hero-button:hover {
+    transform: translateY(2px);
+}
+
+.socials-icons {
+    position: absolute;
+    top: 40%;
+    padding: 0 8rem;
+}
+
+.socials-icons i {
+    display: block;
+    margin: 25px 0;
+    color: #1e1e24;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.socials-icons i:hover {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+
+/* PROJECTS */
+
+.title {
+    position: absolute;
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+}
+  
+.proj-1, .proj-2 {
+    width: 45%;
+    padding: 40px 25px 25px 25px;
+    background-color: #f5f3e7;
+    border-radius: 12px;
+}
+.proj-1:hover, .proj-2:hover {
+    box-shadow: 0 5px 15px #1e1e24;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all ease 0.6s;
+}
+
+.project-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.company {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.project-description {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #1e1e24;
+  font-weight: 700; 
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT */
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 3rem 1rem 3rem;
+    background-color: #f5f3e7;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.message h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.message label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.message input, .message textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: #1e1e24;
+    font-size: 1rem;
+}
+
+.message textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.message button {
+    background-color: #1e1e24;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.message button:hover {
+    transform: translateX(5px);
+}
